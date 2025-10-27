@@ -1,1 +1,142 @@
 /* your code here */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background: #16191c;
+  color: #fff;
+  width: 100%;
+}
+
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 40px 20px 0 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-details .logo_name {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.media-icons {
+  display: flex;
+  gap: 13px;
+}
+
+.media-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #222;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  font-size: 20px;
+  transition: background 0.3s;
+  margin-right: 6px;
+}
+
+.media-icons a:last-child {
+  margin-right: 0;
+}
+
+.media-icons a:hover {
+  background: #f05454;
+}
+
+/* You can use webfonts such as Font Awesome or custom SVGs for icons */
+.icon.facebook::before { content: 'F'; }
+.icon.twitter::before { content: 'T'; }
+.icon.linkedin::before { content: 'L'; }
+.icon.instagram::before { content: 'I'; }
+.icon.youtube::before { content: 'Y'; }
+
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.link-boxes .box {
+  width: 220px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.link-boxes .link_name {
+  color: #fff;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.link-boxes li {
+  margin-bottom: 5px;
+}
+.link-boxes li a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: color 0.2s;
+}
+
+.link-boxes li a:hover {
+  color: #f05454;
+}
+
+.bottom-details {
+  width: 100%;
+  background: #23252a;
+  padding: 18px 0 10px 0;
+  margin-top: 40px;
+}
+
+.bottom-details .bottom_text {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 0.97em;
+  padding: 0 20px;
+}
+
+.bottom-details .policy_terms a {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+  .link-boxes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .link-boxes .box {
+    width: 100%;
+  }
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .bottom-details .bottom_text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
